@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ISA</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" type="image/png" href="assets/images/ISA Favicon.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/custom-responsive.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    
+  <script src="assets/js/barba.js"></script>
+  <script src="assets/js/grid.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+  <script type="text/javascript" src="assets/js/classie.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.smoothState.js"></script>
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body>
+  
+
+<main id="barba-wrapper">
+<div class="barba-container" id="barba-container" data-namespace="detail">
+<div class="container-fluid index-container-fluid">
+  <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+    <nav>
+      <a class="football-menu-link exp-menu" href="javascript:void(0);">Football<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="football-menu">
+        <a href="#football-agent-info">Agents</a>
+        <a href="#football-nfl-info">Nfl Clients</a>
+        <a href="#football-cfl-info">Cfl Clients</a>
+        <a href="#football-services-info">Services</a>
+      </div>
+      <a class="basketball-menu-link exp-menu" href="javascript:void(0);">Basketball<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="basketball-menu">
+        <a href="basketball.html#basketball-agent-info">Agents</a>
+        <a href="basketball.html#basketball-services-info">Services</a>
+      </div>
+      <a class="hockey-menu-link exp-menu" href="javascript:void(0);">Hockey<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="hockey-menu">
+        <a href="hockey.html#hockey-agent-info">Agents</a>
+        <a href="hockey.html#hockey-clients-info">Clients</a>
+        <a href="hockey.html#hockey-services-info">Services</a>
+      </div>
+      <a class="motorsports-menu-link exp-menu" href="javascript:void(0);">Motorsports<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="motorsports-menu">
+        <a href="motorsports.html#motorsports-clients-info">Clients</a>
+        <a href="motorsports.html#motorsports-services-info">Services</a>
+      </div>
+      <a class="coaches-menu-link exp-menu" href="javascript:void(0);">Coaches<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="coaches-menu">
+        <a href="coaches.html#coaches-clients-info">Clients</a>
+        <a href="coaches.html#coaches-services-info">Services</a>
+      </div>
+      <a href="#">Partners</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="social-feed">
+      <a class="twitter-menu-link exp-menu" href="javascript:void(0);">Twitter<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div id="twitter-feed"></div>
+      <a class="insta-menu-link exp-menu" href="javascript:void(0);">Instagram<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div id="twitter-feed2">lol</div>
+      <a class="youtube-menu-link exp-menu" href="javascript:void(0);">Youtube<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div id="twitter-feed1">lol2</div>
+    </div>
+  </div>
+<div class="container-fluid header-container">
+  <div class="main">
+    <section class="buttonset">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/Small-logo.png"/></a>
+    </div>
+      <div class="menu-icons">
+        <i id="showRightSocial" class="fa fa-share-alt" aria-hidden="true"></i>
+        <div class="menu-line"></div>
+        <div id="showRightPush">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+    <div class="full" style="background-image: url(assets/images/Partners-Hero-min.jpg);"></div>
+    <a class="back hidden-xs hidden-sm hidden-md hidden-lg" href="index.html">Go back</a>
+    <div class="row seven-cols partners-category">
+      <div class="col-md-1 text-center active-category partners-accessories">Accessories</div>
+      <div class="col-md-1 text-center partners-automotive">Automotive</div>
+      <div class="col-md-1 text-center partners-equipment">Equipment</div>
+      <div class="col-md-1 text-center partners-fashion">Fashion & Apparel</div>
+      <div class="col-md-1 text-center partners-food">Food & Beverage</div>
+      <div class="col-md-1 text-center partners-national">National Partners</div>
+      <div class="col-md-1 text-center partners-trading">Trading card & memorabilia</div>
+    </div>
+    <div class="partners-info">
+
+      <div id="partners-accessories-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Accessories/verizon.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Accessories/skull candy.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Accessories/mophie.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Accessories/ionmotivators.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Accessories/Herschel.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Accessories/Beats.png"/>
+        </div>
+      </div>
+
+      <div id="partners-automotive-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/audi.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/bmw.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/cadillac.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/cherolet.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/Dodge.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/ford.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/gmc.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/hoonigan.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/jeep.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/land rover.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/magna flow.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/maserati.png"/>
+        </div>
+         <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/mercedes benz.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/porsche.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Automotive/telsa.png"/>
+        </div>
+      </div>
+
+      <div id="partners-equipment-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/bauer.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/ccm.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/sklz.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/spalding.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/stance.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/training mask.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Equipment/warrior.png"/>
+        </div>
+      </div>
+
+      <div id="partners-fashion-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/adidas.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/bodyarmor.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/combat gent.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/easybay.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/ethika.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/five four.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/gongsho.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/lululemon.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/new era.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/nike.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/puma.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/sauce hockey.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/sauce.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/under armour.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Fashion and Apparel/young and reckless.png"/>
+        </div>
+      </div>
+
+      <div id="partners-food-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/cambells.jpg"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/gatorade.jpg"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/menards.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/oberto.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/papa johns.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/pepsi.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/powerade.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/sparkling ice.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Food and Beverage/vita coco.png"/>
+        </div>
+      </div>
+
+      <div id="partners-national-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/National Partners/directtv.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/National Partners/gillette.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/National Partners/microsoft.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/National Partners/tide.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/National Partners/vizio.png"/>
+        </div>
+      </div>
+
+      <div id="partners-trading-info" class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Trading Card Memorabilia/fanatics.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Trading Card Memorabilia/panini.png"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 athlete-info text-center">
+          <img class="athlete-img img-responsive" src="assets/images/partners/Trading Card Memorabilia/upper deck.png"/>
+        </div>
+      </div>
+
+    </div>
+  
+
+</div>
+<div id="main-footer">
+  <ul>
+    <li><a href="#">Football</a></li>
+    <li><a href="#">Basketball</a></li>
+    <li><a href="#">Hockey</a></li>
+    <li><a href="#">Motorsports</a></li>
+    <li><a href="#">Coaches</a></li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="footer row">
+      <div class="email col-md-push-1 col-md-2">
+        <p>email: </p>
+        <span>contact@contact.com</span>
+      </div>
+      <div class="phone col-md-push-1 col-md-2">
+        <p>phone: </p>
+        <span>555.555.5555</span>
+      </div>
+      <div class="address col-md-push-1 col-md-2">
+        <p>address: </p>
+        <span>3197 Airport Loop Dr. Bldg C, Suite 1, Costa Mesa, CA-92626</span>
+      </div>
+      <div class="social col-md-push-1 col-md-2">
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+      <div class="copyright col-md-push-1 col-md-2">
+        <span>Copyright &#9400; 2015 anthro.is</span>
+      </div>
+    </div>
+</div> 
+</div>
+</main>
+
+</body>
+</html>

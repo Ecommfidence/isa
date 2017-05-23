@@ -1,0 +1,201 @@
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */    
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+	.footer.row {
+	    padding: 10px 0;
+	}
+	.jumbotron .footer p {
+		font-size: 14px;
+	}
+	.footer span {
+		font-size: 12px;
+	}
+	.footer .social,
+	.footer .email,
+	.footer .phone,
+	.footer .copyright,
+	.footer .address {
+		margin: 5px 0;
+	}
+}
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.football-info #football-agent-info, 
+	.basketball-info #basketball-agent-info, 
+	.hockey-info #hockey-agent-info .row, 
+	.motorsports-info #motorsports-clients-info, 
+	.coaches-info #coaches-clients-info, 
+	.partners-info #partners-accessories-info, 
+	.about-info #about-agent-info {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.football-category div, 
+	.basketball-category div, 
+	.hockey-category div, 
+	.motorsports-category div, 
+	.coaches-category div, 
+	.partners-category div, 
+	.about-category div {
+		padding: 15px 10px;
+		font-size: 16px;
+	}
+	.header-container {
+		background: #2f2f2f;
+		padding: 10px; 
+	}
+	.logo {
+		position: inherit;
+		float: left;
+	}
+	.menu-icons {
+		position: relative;
+    	top: 15px;
+		float: right;
+	}
+	.cbp-spmenu-vertical {
+		top: 72px;
+	}
+	.cbp-spmenu-push-toleft .menu-icons {
+	    right: 10px;
+	}
+	.intro-thumb {
+	  	display: block;
+	  	width: 100%;
+	  	height: 25vh;
+	}
+	.full {
+	  	height: 25vh;
+	  	display: block;
+	  	background-position: center center;
+	  	background-size: cover;
+	  	background-repeat: no-repeat;
+	}
+	.barba-container {
+	  	display: block;
+	  	position: absolute;
+	  	top: 0;
+	  	right: 0;
+	  	bottom: 0;
+	  	left: 0;
+	}
+	.selector-page .home-blocks-container .home-blocks h1 {
+		bottom: 0;
+	}
+	.nav-roundslide {
+		display: none;
+	}
+	#showRightPush.open span:nth-child(1),
+	#showRightPush.open span:nth-child(3) {
+		background: #8e000b;
+	}
+	.next-cat {
+		display: none !important;
+	}
+	.logo img {
+    	width: 150px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.football-category div, 
+	.basketball-category div, 
+	.hockey-category div, 
+	.motorsports-category div, 
+	.coaches-category div, 
+	.partners-category div, 
+	.about-category div {
+		padding: 10px 5px;
+		font-size: 12px;
+	}
+	.football-info > div, 
+	.basketball-info > div, 
+	.hockey-info > div, 
+	.motorsports-info > div, 
+	.coaches-info > div, 
+	.partners-info > div, 
+	.about-info > div {
+	    padding: 10px;
+	}
+	.cbp-spmenu-vertical a {
+	    padding: 0.5em 1em;
+	}
+	.footer p {
+		font-size: 14px;
+	}
+	#main-footer ul li a {
+		font-size: 14px;
+	}
+	#main-footer ul li {
+		padding: 5px;
+	}
+}

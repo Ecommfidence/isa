@@ -1,0 +1,92 @@
+.nav-roundslide a {
+	position: absolute;
+	display: block;
+	outline: none;
+	text-align: left;
+	z-index: 1000;
+	bottom: 30px;
+}
+
+.nav-roundslide a.prev {
+	left: 0;
+}
+
+.nav-roundslide a.next {
+	right: 0;
+}
+
+.nav-roundslide i {
+	color: #8e000b;
+}
+
+.nav-roundslide a {
+	cursor: pointer;
+	margin: 0 20px;
+	padding: 15px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #fff;
+	-webkit-transition: width 0.3s, background-color 0.3s;
+	transition: width 0.3s, background-color 0.3s;
+}
+
+.nav-roundslide .icon-wrap {
+	position: absolute;
+	width: 14px;
+}
+
+.nav-roundslide a.prev .icon-wrap {
+	left: 12px;
+    top: 10px;
+}
+
+.nav-roundslide a.next .icon-wrap {
+	right: 12px;
+    top: 10px;
+}
+
+.nav-roundslide svg.icon {
+	fill: #566473;
+}
+
+.nav-roundslide h3 {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	color: #566473;
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 12px;
+    line-height: 42px;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-roundslide a.prev h3 {
+	right: 20px;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.nav-roundslide a.next h3 {
+	left: 20px;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+.nav-roundslide a:hover {
+	width: 150px;
+	background: #fff;
+}
+
+.nav-roundslide a:hover h3 {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}

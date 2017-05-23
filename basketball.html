@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ISA</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" type="image/png" href="assets/images/ISA Favicon.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/custom-responsive.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    
+  <script src="assets/js/barba.js"></script>
+  <script src="assets/js/grid.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body>
+  
+<main id="barba-wrapper">
+<div class="barba-container" id="barba-container" data-namespace="detail">
+<div class="container-fluid index-container-fluid">
+  <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+    <nav>
+      <a class="football-menu-link exp-menu" href="javascript:void(0);">Football<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="football-menu">
+        <a href="#football-agent-info">Agents</a>
+        <a href="#football-nfl-info">Nfl Clients</a>
+        <a href="#football-cfl-info">Cfl Clients</a>
+        <a href="#football-services-info">Services</a>
+      </div>
+      <a class="basketball-menu-link exp-menu" href="javascript:void(0);">Basketball<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="basketball-menu">
+        <a href="basketball.html#basketball-agent-info">Agents</a>
+        <a href="basketball.html#basketball-services-info">Services</a>
+      </div>
+      <a class="hockey-menu-link exp-menu" href="javascript:void(0);">Hockey<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="hockey-menu">
+        <a href="hockey.html#hockey-agent-info">Agents</a>
+        <a href="hockey.html#hockey-clients-info">Clients</a>
+        <a href="hockey.html#hockey-services-info">Services</a>
+      </div>
+      <a class="motorsports-menu-link exp-menu" href="javascript:void(0);">Motorsports<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="motorsports-menu">
+        <a href="motorsports.html#motorsports-clients-info">Clients</a>
+        <a href="motorsports.html#motorsports-services-info">Services</a>
+      </div>
+      <a class="coaches-menu-link exp-menu" href="javascript:void(0);">Coaches<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div class="coaches-menu">
+        <a href="coaches.html#coaches-clients-info">Clients</a>
+        <a href="coaches.html#coaches-services-info">Services</a>
+      </div>
+      <a href="#">Partners</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="social-feed">
+      <a class="twitter-menu-link exp-menu" href="javascript:void(0);">Twitter<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div id="twitter-feed"></div>
+      <a class="insta-menu-link exp-menu" href="javascript:void(0);">Instagram<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div id="twitter-feed2">lol</div>
+      <a class="youtube-menu-link exp-menu" href="javascript:void(0);">Youtube<i class="fa fa-plus" aria-hidden="true"></i></a>
+      <div id="twitter-feed1">lol2</div>
+    </div>
+  </div>
+<div class="container-fluid header-container">
+  <div class="main">
+    <section class="buttonset">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/Small-logo.png"/></a>
+    </div>
+      <div class="menu-icons">
+        <i id="showRightSocial" class="fa fa-share-alt" aria-hidden="true"></i>
+        <div class="menu-line"></div>
+        <div id="showRightPush">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+    <div class="full" style="background-image: url(assets/images/Basketball-Hero-min.jpg);"></div>
+    <a class="back hidden-xs hidden-sm hidden-md hidden-lg" href="index.html">Go back</a>
+    <div class="row basketball-category">
+      <div class="col-xs-6 text-center active-category basketball-agent">Agent</div>
+      <div class="col-xs-6 text-center basketball-services">Services</div>
+    </div>
+    <div class="basketball-info">
+
+      <div id="basketball-agent-info" class="row">
+        <div class="col-md-4 text-center">
+          <p class="agent-name">Bardia Ghahremani, j.d.</p>
+          <a class="agent-contact" href="#">Contact here</a>
+          <img class="img-responsive" src="assets/images/basketball/Basketball-Agent-Photo-min.jpg"/>
+        </div>
+        <div class="col-md-8">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        </div>
+      </div>
+
+      <div id="basketball-services-info" class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <p>Charitable community involvement</p>
+        </div>
+      </div>
+
+    </div>
+  
+
+</div>
+<div id="main-footer">
+  <ul>
+    <li><a href="#">Football</a></li>
+    <li><a href="#">Basketball</a></li>
+    <li><a href="#">Hockey</a></li>
+    <li><a href="#">Motorsports</a></li>
+    <li><a href="#">Coaches</a></li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="footer row">
+      <div class="email col-md-push-1 col-md-2">
+        <p>email: </p>
+        <span>contact@contact.com</span>
+      </div>
+      <div class="phone col-md-push-1 col-md-2">
+        <p>phone: </p>
+        <span>555.555.5555</span>
+      </div>
+      <div class="address col-md-push-1 col-md-2">
+        <p>address: </p>
+        <span>3197 Airport Loop Dr. Bldg C, Suite 1, Costa Mesa, CA-92626</span>
+      </div>
+      <div class="social col-md-push-1 col-md-2">
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+      <div class="copyright col-md-push-1 col-md-2">
+        <span>Copyright &#9400; 2015 anthro.is</span>
+      </div>
+    </div>
+</div> 
+</div>
+</main>
+
+</body>
+</html>
