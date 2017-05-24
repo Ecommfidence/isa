@@ -3,32 +3,69 @@
 //   	$(this).addClass('selected');
 // });
 
+// var jump=function(e)
+// {
+//    if (e){
+//        e.preventDefault();
+//        var target = $(this).attr("href");
+//    }else{
+//        var target = location.hash;
+//    }
+//    $('.barba-container').animate(
+//    {
+//        scrollTop: $(target).offset().top
+//    },1000,function()
+//    {
+//        location.hash = target;
+//    });
+// }
+
+// $('.barba-container').hide();
 
 function initialize() {
 
+	// $('.football-menu a').bind("click", jump);
+
+ //    if (location.hash){
+ //        setTimeout(function(){
+ //            $('.barba-container').scrollTop(0).show();
+ //            jump();
+ //        }, 0);
+ //    }else{
+ //        $('.barba-container').show();
+ //    }
 
 	//Hide scrollbar
 	var parent = document.getElementById('barba-wrapper');
 	var child = document.getElementById('barba-container');
 	child.style.right = child.clientWidth - child.offsetWidth + "px";
 
-	//Set homepage blocks' height
-	// var footer_height = $('#main-footer').height();
-	// $('.selector-page .home-blocks-container .intro-thumb').css('height', '100vh').css('height', '-=' + footer_height);
-	// $('.barba-container .full').css('height', '100vh').css('height', '-=' + footer_height);
+	//Set min-height for categories
+	if ($(window).width() > 767) {
+		var footer_height = $('#main-footer').height() + $('.categories').outerHeight();
+		$('.ind-category').css('min-height', '100vh').css('min-height', '-=' + footer_height);
+	}
+
+	//Scroll down animation for hero
+	$(".next-cat").click(function(){
+		event.preventDefault();
+	    $('.barba-container').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 1000);
+    });
 
 	//Menu
 	if ($('body').hasClass( 'cbp-spmenu-push-toleft' )) {
 		$('body').toggleClass( 'cbp-spmenu-push-toleft' );
 	}
 
+	//Show social feeds in menu
 	$("#showRightSocial").click(function(){
 		if ($('#cbp-spmenu-s2').hasClass( 'cbp-spmenu-open' ) && $(this).hasClass('active')) {
 			$('#cbp-spmenu-s2').toggleClass( 'cbp-spmenu-open' );
 			$('body').toggleClass( 'cbp-spmenu-push-toleft' );
 			$(this).toggleClass('active');
 		}
-		
 		else if ($('#cbp-spmenu-s2').hasClass( 'cbp-spmenu-open' )) {
 			$('#cbp-spmenu-s2 nav').hide();
 			$("#showRightPush").toggleClass('open active');
@@ -45,6 +82,7 @@ function initialize() {
 		}
 	});
 
+	//Show menu
 	$("#showRightPush").click(function(){
 		$("#showRightSocial").removeClass('active');
 		if ($('#cbp-spmenu-s2').hasClass( 'cbp-spmenu-open' ) && $(this).hasClass('active')) {
@@ -66,6 +104,23 @@ function initialize() {
 		}
 	});
 
+	$('.mega-menu-link').click(function(){
+		$('#cbp-spmenu-s2').removeClass( 'cbp-spmenu-open' );
+		$("#showRightPush").removeClass('active open');
+		$('body').removeClass( 'cbp-spmenu-push-toleft' );
+		$(this).parent().removeClass('exp-menu-active');
+		$(this).parent().hide();
+		$(this).parent().prev().find('i').removeClass('fa-minus');
+		$(this).parent().prev().find('i').addClass('fa-plus');
+		$('.exp-menu').removeClass('exp-link-active');
+	});
+	$('.menu-link').click(function(){
+		$('#cbp-spmenu-s2').removeClass( 'cbp-spmenu-open' );
+		$("#showRightPush").removeClass('active open');
+		$('body').removeClass( 'cbp-spmenu-push-toleft' );
+	});
+
+	//Menu expand 
 	$('.exp-menu').click(function(){
 		if ($(this).siblings().hasClass('exp-menu-active')) {
 			if ($(this).next().hasClass('exp-menu-active')) {
@@ -96,22 +151,13 @@ function initialize() {
 	//Scroll on mousewheel
 	scrollArrowShow();
 
-	// $('.selector').mousewheel(function(e, delta) {
- //    	var distanceToScroll = $(".intro-thumb")[0].scrollWidth;
- //        $('.selector').stop().animate({scrollLeft: '-='+(distanceToScroll*delta)+'px' }, 300, 'easeOutQuint');
- //        scrollArrowShow();
- //        e.preventDefault();
- //    });
-
     $(".selector").mousewheel(function(event, delta) {
     	var distanceToScroll = $(".intro-thumb")[0].scrollWidth;
-        //this.scrollLeft -= (delta * distanceToScroll);
         $('.selector').animate({
 	        	scrollLeft: "-=" + (delta * distanceToScroll) + "px"
 	    	}, function(){
 	        	scrollArrowShow();
 	    });
-        // scrollArrowShow();
       	event.preventDefault();
    });
 
@@ -146,6 +192,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.football-agent').addClass('active-category');
 	    $('#football-agent-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#football-agent-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
   	if ( location.hash != 0 && location.hash == '#football-agent-info' ){
@@ -157,6 +206,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.football-nfl').addClass('active-category');
 	    $('#football-nfl-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#football-nfl-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#football-nfl-info' ){
@@ -168,6 +220,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.football-cfl').addClass('active-category');
 	    $('#football-cfl-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#football-cfl-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#football-cfl-info' ){
@@ -179,6 +234,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.football-services').addClass('active-category');
 	    $('#football-services-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#football-services-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#football-services-info' ){
@@ -205,6 +263,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.basketball-agent').addClass('active-category');
 	    $('#basketball-agent-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#basketball-agent-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
   	if ( location.hash != 0 && location.hash == '#basketball-agent-info' ){
@@ -216,6 +277,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.basketball-services').addClass('active-category');
 	    $('#basketball-services-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#basketball-services-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#basketball-services-info' ){
@@ -248,6 +312,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.hockey-agent').addClass('active-category');
 	    $('#hockey-agent-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#hockey-agent-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
   	if ( location.hash != 0 && location.hash == '#hockey-agent-info' ){
@@ -259,6 +326,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.hockey-clients').addClass('active-category');
 	    $('#hockey-clients-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#hockey-clients-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#hockey-clients-info' ){
@@ -270,6 +340,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.hockey-services').addClass('active-category');
 	    $('#hockey-services-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#hockey-services-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#hockey-services-info' ){
@@ -296,6 +369,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.motorsports-clients').addClass('active-category');
 	    $('#motorsports-clients-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#motorsports-clients-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
   	if ( location.hash != 0 && location.hash == '#motorsports-clients-info' ){
@@ -307,6 +383,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.motorsports-services').addClass('active-category');
 	    $('#motorsports-services-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#motorsports-services-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#motorsports-services-info' ){
@@ -333,6 +412,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.coaches-clients').addClass('active-category');
 	    $('#coaches-clients-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#coaches-clients-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
   	if ( location.hash != 0 && location.hash == '#coaches-clients-info' ){
@@ -344,6 +426,9 @@ function initialize() {
 	  	$('.active-category').removeClass('active-category');
 	  	$('.coaches-services').addClass('active-category');
 	    $('#coaches-services-info').fadeIn();
+	    $('.barba-container').animate({
+	        scrollTop: $("#coaches-services-info").offset().top - $('.categories').outerHeight()
+	    }, 1000);
 	});
 
 	if ( location.hash != 0 && location.hash == '#coaches-services-info' ){
@@ -447,11 +532,61 @@ function initialize() {
 	  "enableLinks": true, 
 	  "showUser": true,
 	  "showTime": true,
-	  "showImages": true,
+	  "showImages": false,
 	  "showInteraction": false,
 	  "lang": 'en'
 	};
+	
 	twitterFetcher.fetch(configProfile);
+
+	var feed = new Instafeed({
+		target: 'instafeed',
+        get: 'user',
+    	userId: '1418611479',
+    	accessToken: '1418611479.1677ed0.698a8429f3b543b89d3a27ef661e076d',
+    	template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /></a><p>{{caption}}</p></div>',
+    	limit: 2
+    });
+    feed.run();
+
+ //    if (document.getElementById('instafeed-contact')) {
+ //    	var configProfile = {
+	// 	  "profile": {"screenName": 'isasports'},
+	// 	  "domId": 'twitter-feed-contact',
+	// 	  "maxTweets": 2,
+	// 	  "enableLinks": true, 
+	// 	  "showUser": true,
+	// 	  "showTime": true,
+	// 	  "showImages": false,
+	// 	  "showInteraction": false,
+	// 	  "lang": 'en'
+	// 	};
+	//     var feedcontact = new Instafeed({
+	// 		target: 'instafeed-contact',
+	//         get: 'user',
+	//     	userId: '1418611479',
+	//     	accessToken: '1418611479.1677ed0.698a8429f3b543b89d3a27ef661e076d',
+	//     	template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /></a><p>{{caption}}</p></div>',
+	//     	limit: 2
+	//     });
+	//     feedcontact.run();
+	//  //    $('.owl-carousel').owlCarousel({
+	// 	//     loop:true,
+	// 	//     margin:10,
+	// 	//     nav:false,
+	// 	//     responsive:{
+	// 	//         0:{
+	// 	//             items:1
+	// 	//         },
+	// 	//         600:{
+	// 	//             items:1
+	// 	//         },
+	// 	//         1000:{
+	// 	//             items:1
+	// 	//         }
+	// 	//     }
+	// 	// })
+	// }
 }
 
 if ($(window).width() > 767) {

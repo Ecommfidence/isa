@@ -179,13 +179,15 @@
 	}
 	.football-info > div, 
 	.basketball-info > div, 
-	.hockey-info > div, 
 	.motorsports-info > div, 
 	.coaches-info > div, 
 	.partners-info > div, 
 	.about-info > div {
 	    padding: 10px;
 	}
+	.hockey-info #hockey-agent-info .row {
+		padding: 10px;
+	} 
 	.cbp-spmenu-vertical a {
 	    padding: 0.5em 1em;
 	}
@@ -197,5 +199,16 @@
 	}
 	#main-footer ul li {
 		padding: 5px;
+	}
+	.hero-header {
+		bottom: 10px;
+		font-size: 30px;
+	}
+	.athlete-name {
+		font-size: 14px;
+		letter-spacing: 0;
+	}
+	.athlete-team {
+		font-size: 14px; 
 	}
 }

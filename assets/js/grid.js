@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var destThumb = this.newContainer.querySelector('a[href="' + href + '"]');
       var destThumbPosition = destThumb.getBoundingClientRect();
       var fullImage = this.oldContainer.querySelector('.full');
-
+      console.log(destThumbPosition);
       $('.selector').scrollLeft(destThumbPosition.left);
       destThumbPosition = destThumb.getBoundingClientRect();
       $(".barba-container").animate({ scrollTop: 0 }, 300);
