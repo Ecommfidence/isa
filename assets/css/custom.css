@@ -672,6 +672,8 @@ html, body {
 	letter-spacing: 1px;
 }
 .athlete-name {
+	color: #333;
+	display: block;
 	letter-spacing: 0;
 	font-family: 'Helvetica Neue LT Std HvCn';
 	font-size: 18px;
@@ -688,12 +690,18 @@ html, body {
 	color: #111;
 	margin-bottom: 25px;
 }
+.athlete-name:hover {
+	color: #333;
+}
 .athlete-name:after{
 	display:block;
   	content: '';
   	border-bottom: solid 3px #8e000b;  
   	transform: scaleX(0);  
   	transition: transform 250ms ease-in-out;
+}
+.athlete-name:hover:after{
+	transform: scaleX(0.5);
 }
 .athlete-info a:hover + .athlete-name:after{
 	transform: scaleX(0.5);
@@ -890,6 +898,9 @@ html, body {
 }
 #hockey-services-info {
 	padding: 10px 25px;
+}
+#hockey-clients-info {
+	padding: 30px 50px 50px 50px;
 }
 .football-info #football-agent-info,
 .basketball-info #basketball-agent-info,
