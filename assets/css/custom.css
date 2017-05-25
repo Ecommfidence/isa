@@ -224,10 +224,25 @@ html, body {
     color: #fff;
     text-transform: uppercase;
 }
-#main-footer ul li a{
+#main-footer ul li a {
 	font-family: 'Helvetica Neue LT Std LtCn';
     color: #fff;
     font-size: 16px;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#main-footer ul li a:after{
+	display:block;
+  	content: '';
+  	border-bottom: solid 3px #fff;  
+  	transform: scaleX(0);  
+  	transition: transform 250ms ease-in-out;
+}
+#main-footer ul li a:hover:after {
+	transform: scaleX(1);
 }
 .footer.row {
 	padding: 25px 0; 
@@ -268,7 +283,10 @@ html, body {
 	color: #ccc;
 }
 .footer .social a:hover {
-	background: transparent;
+	background: #fff;
+}
+.footer .social a:hover i{
+	color: #8e000b;
 }
 .footer span {
 	font-family: 'Helvetica Neue LT Std LtCn';
@@ -517,15 +535,6 @@ html, body {
 }
 .menu-icons i {
 	font-size: 18px;
-	/*color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    line-height: 29px;
-    position: relative;
-    padding-left: 4px;
-    top: -5px;*/
 }
 .menu-line {
 	margin: 0 10px;
@@ -542,6 +551,16 @@ html, body {
 }
 .logo img {
 	width: 200px;
+}
+.cbp-spmenu .mega-menu-link {
+	display: table;
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.cbp-spmenu .mega-menu-link:hover {
+	color: #8e000b;
 }
 /*football*/
 .hero-header {
@@ -571,7 +590,6 @@ html, body {
 .hockey-category div,
 .motorsports-category div,
 .coaches-category div,
-.partners-category div,
 .about-category div {
 	font-family: 'Helvetica Neue LT Std BdCnO';
 	text-transform: uppercase;
@@ -581,6 +599,17 @@ html, body {
 	background-position: center !important;
 	color: #fff;
 	font-size: 18px;
+	cursor: pointer;
+}
+.partners-category div {
+	font-family: 'Helvetica Neue LT Std BdCnO';
+	text-transform: uppercase;
+	padding: 25px 5px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	color: #fff;
+	font-size: 14px;
 	cursor: pointer;
 }
 .agent-name {
@@ -597,6 +626,21 @@ html, body {
 	text-transform: uppercase;
 	font-style: italic;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.agent-contact:after{
+	display:block;
+  	content: '';
+  	border-bottom: solid 3px #8e000b;  
+  	transform: scaleX(0);  
+  	transition: transform 250ms ease-in-out;
+}
+.agent-contact:hover:after {
+	transform: scaleX(0.2);
 }
 .football-info,
 .basketball-info,
@@ -614,10 +658,25 @@ html, body {
 	text-transform: uppercase;
 	margin-top: 15px;
 	margin-bottom: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .athlete-team {
 	color: #111;
 	margin-bottom: 25px;
+}
+.athlete-name:after{
+	display:block;
+  	content: '';
+  	border-bottom: solid 3px #8e000b;  
+  	transform: scaleX(0);  
+  	transition: transform 250ms ease-in-out;
+}
+.athlete-info a:hover + .athlete-name:after{
+	transform: scaleX(0.5);
 }
 .football-category .football-agent {
 	background: url('../images/football/Nav Section 1-min.jpg');
@@ -791,7 +850,8 @@ html, body {
 	display: none;
 }
 .partners-info img {
-	margin: 0 auto;
+	margin: 10px auto;
+	max-width: 70%;
 }
 .football-info #football-agent-info,
 .basketball-info #basketball-agent-info,
@@ -862,10 +922,17 @@ html, body {
 .contact-row a {
 	color: #fff;
 }
-.contact-row a:hover {
-	color: #fff;
+.contact-row a:hover i{
+	color: #8e000b;
+	background: #fff;
+	border-color: #fff;
 }
 .contact-row i {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 	width: 30px;
     height: 30px;
     line-height: 30px;
@@ -916,9 +983,18 @@ html, body {
 	margin-bottom: 15px;
 }
 #isa-contact-form .form-submit {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 	font-family: 'Helvetica Neue LT Std BdCnO';
 	background: #fff;
 	width: 150px;
+}
+#isa-contact-form .form-submit:hover {
+	background: #8e000b;
+	color: #fff;
 }
 /*scroll animation*/
 #section07::after {
@@ -928,8 +1004,6 @@ html, body {
 	content: '';
 	width: 100%;
 	height: 80%;
-	/*background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);*/
-	/*background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);*/
 }
 .demo a {
 	position: absolute;
@@ -1095,4 +1169,70 @@ html, body {
 	transition-delay: 0.1s;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
+}
+
+/*Back to top*/
+.back-to-top {
+	position: fixed;
+	right: 1%;
+	bottom: -7.5%;
+	height: 15px;
+	width: 40px;
+	padding: 3px 5px;
+	font-size: 10px;
+	font-weight: bold;
+	color: transparent;
+	opacity: 0.5;
+	z-index: 3;
+	visibility: hidden;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.25s ease-in-out;
+	background-color: #858585;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+}
+
+.back-to-top::before,
+.back-to-top::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top: 0;
+}
+
+.back-to-top::before {
+	top: -20px;
+	z-index: 4;
+	border-bottom: 20px solid #858585;
+}
+
+.back-to-top::after {
+	bottom: 0;
+	z-index: 5;
+	border-bottom: 20px solid #505050;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+	height: 40px;
+	color: #212223;
+}
+
+.show-back-to-top {
+	display: block;
+	bottom: 1.25%;
+	visibility: visible;
 }

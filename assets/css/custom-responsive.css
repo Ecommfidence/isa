@@ -86,6 +86,12 @@
 	}
 }
 
+@media screen and (max-width: 1350px) {
+	.partners-category div {
+		font-size: 11px;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.football-info #football-agent-info, 
 	.basketball-info #basketball-agent-info, 
@@ -108,6 +114,30 @@
 	.about-category div {
 		padding: 15px 10px;
 		font-size: 16px;
+	}
+	.partners-category .active-category {
+		text-decoration: underline;
+	}
+	.partners-category .partners-accessories.active-category:after {
+		border-top: none;
+	}
+	.partners-category .partners-automotive.active-category:after {
+		border-top: none;
+	}
+	.partners-category .partners-equipment.active-category:after {
+		border-top: none;
+	}
+	.partners-category .partners-fashion.active-category:after {
+		border-top: none;
+	}
+	.partners-category .partners-food.active-category:after {
+		border-top: none;
+	}
+	.partners-category .partners-national.active-category:after {
+		border-top: none;
+	}
+	.partners-category .partners-trading.active-category:after {
+		border-top: none;
 	}
 	.header-container {
 		background: #2f2f2f;
@@ -210,5 +240,8 @@
 	}
 	.athlete-team {
 		font-size: 14px; 
+	}
+	.google-maps {
+		margin: 10px auto !important;
 	}
 }

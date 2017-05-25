@@ -1,39 +1,4 @@
-// $('.selector .home-blocks-container .home-blocks').click( function() {
-// 	$('.selector .home-blocks-container .home-blocks').removeClass('selected');
-//   	$(this).addClass('selected');
-// });
-
-// var jump=function(e)
-// {
-//    if (e){
-//        e.preventDefault();
-//        var target = $(this).attr("href");
-//    }else{
-//        var target = location.hash;
-//    }
-//    $('.barba-container').animate(
-//    {
-//        scrollTop: $(target).offset().top
-//    },1000,function()
-//    {
-//        location.hash = target;
-//    });
-// }
-
-// $('.barba-container').hide();
-
 function initialize() {
-
-	// $('.football-menu a').bind("click", jump);
-
- //    if (location.hash){
- //        setTimeout(function(){
- //            $('.barba-container').scrollTop(0).show();
- //            jump();
- //        }, 0);
- //    }else{
- //        $('.barba-container').show();
- //    }
 
 	//Hide scrollbar
 	var parent = document.getElementById('barba-wrapper');
@@ -587,6 +552,21 @@ function initialize() {
 	// 	//     }
 	// 	// })
 	// }
+
+	// Check distance to top and display back-to-top.
+	$( '.barba-container' ).scroll( function() {
+		if ( $( this ).scrollTop() > 100 ) {
+			$( '.back-to-top' ).addClass( 'show-back-to-top' );
+		} else {
+			$( '.back-to-top' ).removeClass( 'show-back-to-top' );
+		}
+	});
+
+	// Click event to scroll to top.
+	$( '.back-to-top' ).click( function() {
+		$( '.barba-container' ).animate( { scrollTop : 0 }, 800 );
+		return false;
+	});
 }
 
 if ($(window).width() > 767) {
