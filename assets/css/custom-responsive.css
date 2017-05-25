@@ -201,6 +201,9 @@
 	#coaches-services-info p {
 		margin-bottom: 15px;
 	}
+	#football-cfl-info div:last-child {
+		clear: left;
+	}
 }
 
 @media screen and (max-width: 480px) {
