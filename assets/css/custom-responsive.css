@@ -153,7 +153,7 @@
 		float: right;
 	}
 	.cbp-spmenu-vertical {
-		top: 72px;
+		top: 71px;
 	}
 	.cbp-spmenu-push-toleft .menu-icons {
 	    right: 10px;
@@ -192,7 +192,14 @@
 		display: none !important;
 	}
 	.logo img {
-    	width: 150px;
+    	/*width: 150px;*/
+	}
+	#football-services-info p,
+	#basketball-services-info p,
+	#hockey-services-info p,
+	#motorsports-services-info p,
+	#coaches-services-info p {
+		margin-bottom: 15px;
 	}
 }
 

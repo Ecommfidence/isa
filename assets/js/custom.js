@@ -514,11 +514,11 @@ function initialize() {
     });
     feed.run();
 
- //    if (document.getElementById('instafeed-contact')) {
+ //    if (document.getElementById('twitter-feed-contact')) {
  //    	var configProfile = {
 	// 	  "profile": {"screenName": 'isasports'},
 	// 	  "domId": 'twitter-feed-contact',
-	// 	  "maxTweets": 2,
+	// 	  "maxTweets": 10,
 	// 	  "enableLinks": true, 
 	// 	  "showUser": true,
 	// 	  "showTime": true,
@@ -526,32 +526,10 @@ function initialize() {
 	// 	  "showInteraction": false,
 	// 	  "lang": 'en'
 	// 	};
-	//     var feedcontact = new Instafeed({
-	// 		target: 'instafeed-contact',
-	//         get: 'user',
-	//     	userId: '1418611479',
-	//     	accessToken: '1418611479.1677ed0.698a8429f3b543b89d3a27ef661e076d',
-	//     	template: '<div><a href="{{link}}" target="_blank"><img src="{{image}}" /></a><p>{{caption}}</p></div>',
-	//     	limit: 2
-	//     });
-	//     feedcontact.run();
-	//  //    $('.owl-carousel').owlCarousel({
-	// 	//     loop:true,
-	// 	//     margin:10,
-	// 	//     nav:false,
-	// 	//     responsive:{
-	// 	//         0:{
-	// 	//             items:1
-	// 	//         },
-	// 	//         600:{
-	// 	//             items:1
-	// 	//         },
-	// 	//         1000:{
-	// 	//             items:1
-	// 	//         }
-	// 	//     }
-	// 	// })
+	// 	twitterFetcher.fetch(configProfile);
 	// }
+
+	//Spash screen
 
 	// Check distance to top and display back-to-top.
 	$( '.barba-container' ).scroll( function() {
@@ -578,6 +556,10 @@ else {
 	});
 }
 
+$(document).ready(function(){
+	$( "#splash" ).delay( 1500 ).toggle("slide", {direction: "right"}, 1000); 
+});
+
 function scrollArrowShow() {
 	if (typeof ($(".intro-thumb")[0]) !== 'undefined') {
 		var totalScroll = (($(".intro-thumb")[0].scrollWidth) * 8 );
@@ -599,7 +581,7 @@ function scrollArrowShow() {
 
 function scrollThumb(direction) {
 	if (typeof ($(".intro-thumb")[0]) !== 'undefined') {
-		var distanceToScroll = ((($(".intro-thumb")[0].scrollWidth) * 3 ) + 1);
+		var distanceToScroll = (($(".intro-thumb")[0].scrollWidth ) + 1);
 		if (direction=='Go_L') {
 	    	$('.selector').animate({
 	        	scrollLeft: "-=" + distanceToScroll + "px"

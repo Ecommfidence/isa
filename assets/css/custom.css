@@ -124,6 +124,24 @@ a:focus {
 html, body {
     overflow:hidden;
 }
+#splash {
+	position: absolute; 
+	top: 0px; 
+	bottom: 0px; 
+	left: 0px; 
+	right: 0px; 
+	z-index: 9999;
+	background: url('../images/Splash-page-wood-min.jpg');
+	background-color: #000;
+  	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 #barba-wrapper {
 	height: 100%;
     width: 100%;
@@ -550,7 +568,8 @@ html, body {
 	left: 10px;
 }
 .logo img {
-	width: 200px;
+	width: 120px;
+	margin-top: 10px;
 }
 .cbp-spmenu .mega-menu-link {
 	display: table;
@@ -770,6 +789,21 @@ html, body {
 	bottom: -15px;
 	left: 15%;
 }
+#football-services-info,
+#basketball-services-info,
+#hockey-services-info,
+#motorsports-services-info,
+#coaches-services-info {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+#football-services-info p,
+#basketball-services-info p,
+#hockey-services-info p,
+#motorsports-services-info p,
+#coaches-services-info p {
+	margin-bottom: 25px;
+}
 .football-category .football-agent.active-category:after {
 	border-top: 15px solid #8d0008;
 }
@@ -852,6 +886,9 @@ html, body {
 .partners-info img {
 	margin: 10px auto;
 	max-width: 70%;
+}
+#hockey-services-info {
+	padding: 10px 25px;
 }
 .football-info #football-agent-info,
 .basketball-info #basketball-agent-info,
@@ -995,6 +1032,17 @@ html, body {
 #isa-contact-form .form-submit:hover {
 	background: #8e000b;
 	color: #fff;
+}
+#twitter-feed-contact {
+	max-height: 500px;
+    overflow: auto;
+    margin: 25px 0;
+}
+#twitter-feed-contact ul {
+	padding-left: 0;
+}
+#twitter-feed-contact ul li {
+	list-style: none;
 }
 /*scroll animation*/
 #section07::after {

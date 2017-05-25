@@ -60,10 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
       this.newContainer.style.visibility = 'visible';
 
       var href = Barba.HistoryManager.prevStatus().url.split('/').pop();
-      var destThumb = this.newContainer.querySelector('a[href="' + href + '"]');
+      var destThumb = this.newContainer.querySelector('a.intro-thumb[href="' + href + '"]');
       var destThumbPosition = destThumb.getBoundingClientRect();
       var fullImage = this.oldContainer.querySelector('.full');
-      console.log(destThumbPosition);
+      console.log(destThumb);
       $('.selector').scrollLeft(destThumbPosition.left);
       destThumbPosition = destThumb.getBoundingClientRect();
       $(".barba-container").animate({ scrollTop: 0 }, 300);
