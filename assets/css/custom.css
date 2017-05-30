@@ -22,7 +22,7 @@
 }
 
 @font-face {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
 	src: url('../fonts/HelveticaNeueLTStd-BdCnO.eot');
 	src: url('../fonts/HelveticaNeueLTStd-BdCnO.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/HelveticaNeueLTStd-BdCnO.woff2') format('woff2'),
@@ -180,7 +180,8 @@ html, body {
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	color: #fff;
 	position: absolute;
 	bottom: 70px;
@@ -583,7 +584,8 @@ html, body {
 }
 /*football*/
 .hero-header {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
     color: #fff;
     position: absolute;
     bottom: 70px;
@@ -610,7 +612,8 @@ html, body {
 .motorsports-category div,
 .coaches-category div,
 .about-category div {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	text-transform: uppercase;
 	padding: 25px 5px;
 	background-repeat: no-repeat !important;
@@ -621,7 +624,8 @@ html, body {
 	cursor: pointer;
 }
 .partners-category div {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	text-transform: uppercase;
 	padding: 25px 5px;
 	background-repeat: no-repeat !important;
@@ -632,7 +636,8 @@ html, body {
 	cursor: pointer;
 }
 .agent-name {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	font-size: 24px;
 	color: #8e000b;
 	text-align: center;
@@ -1011,17 +1016,20 @@ html, body {
 	font-size: 30px;
 }
 .send-enq {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	font-size: 16px;
 }
 #isa-contact-form p {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	font-size: 16px;
 }
 #isa-contact-form input,
 #isa-contact-form textarea,
 #isa-contact-form select {
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	outline: none !important;
 	border-radius: 5px; 
 	width: 100%;
@@ -1037,7 +1045,8 @@ html, body {
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	font-family: 'Helvetica Neue LT Std BdCnO';
+	font-family: 'Helvetica Neue LT Std BdCn';
+	font-style: italic;
 	background: #fff;
 	width: 150px;
 }

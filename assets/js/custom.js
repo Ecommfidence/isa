@@ -557,7 +557,7 @@ else {
 }
 
 $(document).ready(function(){
-	$( "#splash" ).delay( 1500 ).toggle("slide", {direction: "right"}, 1000); 
+	$( "#splash" ).delay( 3000 ).toggle("slide", {direction: "right"}, 1000); 
 });
 
 function scrollArrowShow() {
