@@ -254,4 +254,7 @@
 	.google-maps {
 		margin: 10px auto !important;
 	}
+	.barba-container #contact-category {
+    	padding: 10px 0;
+	}
 }

@@ -712,7 +712,7 @@ html, body {
 	transform: scaleX(0.5);
 }
 .football-category .football-agent {
-	background: url('../images/football/Nav Section 1-min.jpg');
+	background: url('../images/football/Nav Section 3-min.jpg');
 }
 .football-category .football-nfl {
 	background: url('../images/football/Nav Section 2-min.jpg');
@@ -724,13 +724,13 @@ html, body {
 	background: url('../images/football/Nav Section 4-min.jpg');
 }
 .basketball-category .basketball-agent {
-	background: url('../images/basketball/Second-Nav-whole 3-min.jpg');
+	background: url('../images/football/Nav Section 3-min.jpg');
 }
 .basketball-category .basketball-services {
 	background: url('../images/basketball/Second-Nav-whole 2-min.jpg');
 }
 .hockey-category .hockey-agent {
-	background: url('../images/hockey/Second-Nav-Bar 4-min.jpg');
+	background: url('../images/football/Nav Section 3-min.jpg');
 }
 .hockey-category .hockey-clients {
 	background: url('../images/hockey/Second-Nav-Bar 2-min.jpg');
@@ -755,7 +755,7 @@ html, body {
 	color: transparent;
 }
 .partners-category .partners-accessories{
-	background: url('../images/partners/1.jpg');
+	background: url('../images/partners/3.jpg');
 }
 .partners-category .partners-automotive{
 	background: url('../images/partners/2.jpg');
@@ -764,16 +764,19 @@ html, body {
 	background: url('../images/partners/3.jpg');
 }
 .partners-category .partners-fashion{
-	background: url('../images/partners/4.jpg');
+	background: url('../images/coaches/Second-Nav-Whole 3-min.jpg');
 }
 .partners-category .partners-food{
 	background: url('../images/partners/5.jpg');
 }
 .partners-category .partners-national{
-	background: url('../images/partners/6.jpg');
+	background: url(../images/partners/3.jpg);
 }
 .partners-category .partners-trading{
-	background: url('../images/partners/7.jpg');
+	background: url('../images/coaches/Second-Nav-Whole 2-min.jpg');
+}
+.categories .active-category {
+	background: url('../images/football/Nav Section 1-min.jpg');
 }
 .football-category div.active-category:after,
 .basketball-category div.active-category:after,
@@ -818,67 +821,7 @@ html, body {
 #coaches-services-info p {
 	margin-bottom: 25px;
 }
-.football-category .football-agent.active-category:after {
-	border-top: 15px solid #8d0008;
-}
-.football-category .football-nfl.active-category:after {
-	border-top: 15px solid #4d4d4d;
-}
-.football-category .football-cfl.active-category:after {
-	border-top: 15px solid #888788;
-}
-.football-category .football-services.active-category:after {
-	border-top: 15px solid #afafb0;
-}
-.basketball-category .basketball-agent.active-category:after {
-	border-top: 15px solid #8d0008;
-}
-.basketball-category .basketball-services.active-category:after {
-	border-top: 15px solid #afafb0;
-}
-.hockey-category .hockey-agent.active-category:after {
-	border-top: 15px solid #8d0008;
-}
-.hockey-category .hockey-clients.active-category:after {
-	border-top: 15px solid #4d4d4d;
-}
-.hockey-category .hockey-services.active-category:after {
-	border-top: 15px solid #afafb0;
-}
-.motorsports-category .motorsports-clients.active-category:after {
-	border-top: 15px solid #4d4d4d;
-}
-.motorsports-category .motorsports-services.active-category:after {
-	border-top: 15px solid #888788;
-}
-.coaches-category .coaches-clients.active-category:after {
-	border-top: 15px solid #4d4d4d;
-}
-.coaches-category .coaches-services.active-category:after {
-	border-top: 15px solid #888788;
-}
-.about-category .about-agent.active-category:after {
-	border-top: 15px solid #8d0008;
-}
-.partners-category .partners-accessories.active-category:after {
-	border-top: 15px solid #8d0008;
-}
-.partners-category .partners-automotive.active-category:after {
-	border-top: 15px solid #4d4d4d;
-}
-.partners-category .partners-equipment.active-category:after {
-	border-top: 15px solid #888788;
-}
-.partners-category .partners-fashion.active-category:after {
-	border-top: 15px solid #8d0008;
-}
-.partners-category .partners-food.active-category:after {
-	border-top: 15px solid #4d4d4d;
-}
-.partners-category .partners-national.active-category:after {
-	border-top: 15px solid #888788;
-}
-.partners-category .partners-trading.active-category:after {
+.categories .active-category:after {
 	border-top: 15px solid #8d0008;
 }
 .football-info > div,
@@ -968,7 +911,8 @@ html, body {
 	color: #fff;
 }
 .get-social {
-	font-family: 'Helvetica Neue LT Std HvCnO';
+	font-family: 'Helvetica Neue LT Std HvCn';
+	font-style: italic;
 	text-transform: uppercase;
 	font-size: 30px;
 	margin-bottom: 25px;
@@ -995,7 +939,8 @@ html, body {
     border-radius: 5px;
 }
 .contact-info-div p {
-	font-family: 'Helvetica Neue LT Std HvCnO';
+	font-family: 'Helvetica Neue LT Std HvCn';
+	font-style: italic;
 	text-transform: uppercase;
 	font-size: 30px;
 	margin-top: 30px;
@@ -1011,7 +956,8 @@ html, body {
 	margin-top: 15px;
 }
 .get-in-touch {
-	font-family: 'Helvetica Neue LT Std HvCnO';
+	font-family: 'Helvetica Neue LT Std HvCn';
+	font-style: italic;
 	text-transform: uppercase;
 	font-size: 30px;
 }

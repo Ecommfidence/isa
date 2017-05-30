@@ -97,24 +97,30 @@
         </div>
         <a class="back hidden-xs hidden-sm hidden-md hidden-lg" href="index.html">Go back</a>
         <style>
+          #contact-category {
+            padding: 50px 0;  
+          }
           .google-maps {
             position: relative;
-            width: 95%;
+            width: 90%;
             display: block;
-            margin: 25px auto;
-            padding-bottom: 35%;
+            margin: 0 auto;
+            padding-bottom: 30%;
             overflow: hidden;
           }
           .google-maps iframe {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100% !important;
-              height: 100% !important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            pointer-events: none;
           }
         </style>
-        <div id="contact-category" class="google-maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.8956997452788!2d-117.8694865843469!3d33.685764780707075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdee7cc20f76f%3A0xc4727933bcee921c!2s3197+Airport+Loop+Dr%2C+Costa+Mesa%2C+CA+92626!5e0!3m2!1sen!2sus!4v1495739788876" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="contact-category">
+          <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.8956997452788!2d-117.8694865843469!3d33.685764780707075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdee7cc20f76f%3A0xc4727933bcee921c!2s3197+Airport+Loop+Dr%2C+Costa+Mesa%2C+CA+92626!5e0!3m2!1sen!2sus!4v1495739788876" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
         <div class="row contact-row">
           <div class="col-md-4 col-md-push-2">
@@ -152,10 +158,11 @@
               <input type="email" name="email">
               <p>Subject</p>
               <select>
-                <option value="Subject1" name="Subject1">Subject1</option>
-                <option value="Subject2" name="Subject2">Subject2</option>
-                <option value="Subject3" name="Subject3">Subject3</option>
-                <option value="Subject4" name="Subject4">Subject4</option>
+                <option value="Football" name="Football">Football</option>
+                <option value="Basketball" name="Basketball">Basketball</option>
+                <option value="Hockey" name="Hockey">Hockey</option>
+                <option value="Motorsports" name="Motorsports">Motorsports</option>
+                <option value="Coaches" name="Coaches">Coaches</option>
               </select> 
               <p>Your Message</p>
               <textarea rows="10"></textarea>
@@ -189,10 +196,9 @@
             <span>3197 Airport Loop Dr. Bldg C, Suite 1, Costa Mesa, CA 92626</span>
           </div>
           <div class="social col-md-push-1 col-md-2">
-            <a href="https://www.facebook.com/isasports/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/isasports?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://www.instagram.com/isasportsfamily/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/company-beta/434557/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/isasports?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/isasports" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
           </div>
           <div class="copyright col-md-push-1 col-md-2">
             <span>Copyright &#9400; 2017 anthro.is</span>
