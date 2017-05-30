@@ -284,6 +284,9 @@ html, body {
 	text-align: center;
 	margin: 10px 0;
 }
+.phone span {
+	color: #fff !important;
+}
 .footer .social a {
 	width: 25px;
     height: 25px;
