@@ -1250,16 +1250,15 @@ html, body {
 	text-transform: uppercase;
 	transition: all 0.25s ease-in-out;
 	background-color: #858585;
+}
+.back-to-top:hover,
+.back-to-top:focus {
+	opacity: 1;
+	text-decoration: none;
+}
 
-	&:hover,
-	&:focus {
-		opacity: 1;
-		text-decoration: none;
-	}
-
-	&:focus {
-		outline: thin dotted;
-	}
+.back-to-top:focus {
+	outline: thin dotted;
 }
 
 .back-to-top::before,
